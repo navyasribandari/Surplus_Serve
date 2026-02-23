@@ -1,0 +1,104 @@
+.navbar {
+  top: 0;
+  z-index: 1000;
+}
+
+/* Receiver Container */
+.receiver-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../Images/donor_background2.jpg') no-repeat center center fixed;
+  min-height: 100vh;
+  padding: 20px;
+  background-size: cover;
+}
+
+.receiver-box {
+  background-color: white;
+  padding: 5vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #f1f1f1,#e1c7ed,#f1f1f1);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 10vh;
+  position: relative;
+  left: 22%;
+}
+
+/* Form Styling */
+.receiver-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.receiver-box form div {
+  margin-bottom: 15px;
+}
+
+.receiver-box label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.receiver-box input,
+.receiver-box select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.receiver-box input:focus,
+.receiver-box select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.receiver-box button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #430b60;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.receiver-box button:disabled {
+  background-color: #430b60;
+  cursor: not-allowed;
+}
+
+.receiver-box button:hover:not(:disabled) {
+  background-color: #e1c7ed;
+}
+
+/* Message Styling */
+.receiver-box p {
+  font-size: 14px;
+  color: #ff0000;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .receiver-container {
+    padding: 10px;
+  }
+
+  .receiver-box {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,148 @@
+/* Container Styles */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the form vertically */
+  background: url('../Images/registerr.jpg') no-repeat center center;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-size: cover;
+}
+
+/* Form Box */
+.register-box {
+  background: white; /* Semi-transparent light brown (tan) */
+  padding: 1px 50px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(9, 9, 9, 0.827);
+  width: 35%;
+  max-width: 40%;
+  max-height: 65%;
+  position: relative;
+  left: 22%;
+  margin-top: 6.5%;
+}
+
+.register-box h2 {
+  color: #0b0c0d; /* Dark brown */
+  text-align: center; /* Center the heading */
+}
+
+.register-box p {
+  color: #110303; /* Muted brown */
+  text-align: center;
+}
+
+/* Form Group Styles */
+.register-box label {
+  margin-bottom: 0px;
+  color: #0c0b0bc5; /* Dark brown */
+  font-size: 15px; /* Adjust font size */
+}
+
+.register-box input,
+.register-box select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #0e0d0c; /* Medium brown */
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Button Styles */
+.register-box .register-button {
+  width: 50%;
+  padding: 10px 20px;
+  background: #152744; /* Tan (light brown) */
+  color: rgb(234, 223, 223);
+  border-radius: 5px;
+  font-size: 90%;
+  cursor: pointer;
+  margin: 20px auto 0; /* Center the button horizontally */
+  display: block;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for default state */
+}
+
+/* Hover Effect */
+.register-box .register-button:hover {
+  background: #61d2b4; /* Antique brass */
+  transform: scale(1.05); /* Button highlight effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow when hovered */
+}
+
+/* Active Effect */
+/*.register-box .register-button:active {
+  background:  #a06cd5; /* Darker brown when button is clicked */
+  /*transform: scale(1.02); }/* Slightly smaller scale to mimic button press */
+
+
+/* Role Selection */
+.register-box .role-options {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.register-box .role-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 90%;
+  color: #020000; /* Dark brown */
+}
+.register-box .login-link a{
+  color: #152744;
+}
+.register-box .login-link a:hover{
+  color: #61d2b4;
+}
+
+/* Password Visibility Toggle */
+.show-password {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.show-password input {
+  margin-right: 10px;
+}
+
+.show-password label {
+  font-size: 14px;
+  color: #4b2e2e; /* Dark brown */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .register-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .register-box .register-button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-box {
+    padding: 15px;
+  }
+
+  .register-box label {
+    font-size: 14px;
+  }
+
+  .register-box input,
+  .register-box select {
+    font-size: 12px;
+  }
+
+  .register-box .register-button {
+    width: 80%;
+  }
+}

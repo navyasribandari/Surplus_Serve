@@ -1,0 +1,152 @@
+/* Main container */
+.login-container {
+  display: flex;
+  justify-content: center; /* Center the login form horizontally */
+  align-items: center; /* Center the form vertically */
+  background: url('../Images/Login_BG.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Login form container */
+.login-box {
+  width: 70vh;
+  padding: 30px;
+  background: rgba(255, 254, 255, 0.571); /* Semi-transparent white */
+  border-radius: 15px; /* Apply a curved shape */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Light shadow for a soft 3D effect */
+  margin-top: 5%;
+  max-width: 40%;
+}
+
+/* Heading styles */
+.login-box h2 {
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-box p {
+  text-align: center;
+  font-size: 14px;
+  color: #230707;
+}
+
+/* Form group styles */
+.login-box .form-group {
+  margin-bottom: 10px;
+}
+
+.login-box .form-group label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #230707;
+}
+
+.login-box .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for input fields */
+  border-radius: 10px; /* Rounded corners for input fields */
+  background: #f9f9f9; /* Light background for input fields */
+  color: #333;
+  font-size: 14px;
+}
+
+.login-box .form-group input::placeholder {
+  color: #aaa;
+}
+
+/* Button styles */
+.login-box .login-button {
+  width: 50%;
+  padding: 10px 20px;
+  background: #430b60; /* Tan (light brown) */
+  color: rgb(234, 223, 223);
+  border-radius: 5px;
+  font-size: 90%;
+  cursor: pointer;
+  margin: 20px auto 0; /* Center the button horizontally */
+  display: block;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for default state */
+}
+
+/* Hover Effect */
+.login-box .login-button:hover {
+  background: #5c257f; /* Antique brass */
+  transform: scale(1.05); /* Button highlight effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow when hovered */
+}
+
+/* Active Effect */
+.login-box .login-button:active {
+  background:  #a06cd5; /* Darker brown when button is clicked */
+  transform: scale(1.02); /* Slightly smaller scale to mimic button press */
+}
+
+/* Error message styles */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Forgot password and register link styles */
+.login-box .forgot-password,
+.register-link a{
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color:  rgb(77, 16, 123);;
+  cursor: pointer;
+}
+
+.login-box .forgot-password:hover,
+.register-link a:hover {
+  color:  #e1c7ed;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%; /* Adjust width for tablets and smaller screens */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .login-box h2 {
+    font-size: 20px; /* Reduce heading size */
+  }
+
+  .login-box p {
+    font-size: 12px; /* Adjust paragraph font size */
+  }
+
+  .login-box .login-button {
+    width: 60%; /* Adjust button width */
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    width: 95%; /* Make the box almost full width on mobile screens */
+    padding: 15px; /* Further reduce padding */
+  }
+
+  .login-box h2 {
+    font-size: 18px; /* Smaller heading size for mobiles */
+  }
+
+  .login-box p {
+    font-size: 12px; /* Further adjust paragraph size */
+  }
+
+  .login-box .login-button {
+    width: 70%; /* Adjust button width for mobiles */
+    font-size: 12px; /* Reduce font size */
+  }
+}
